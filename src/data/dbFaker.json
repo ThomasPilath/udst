@@ -1,0 +1,100 @@
+[
+  {
+    "employe" : {
+      "id" : 20,
+      "firstName" : "Xabi",
+      "lastName" : "Larzabal",
+      "grade" : "Convoyeur",
+      "picture" : "Blue"
+    },
+    "activities" : [
+      {
+        "date" : "2024-05-09",
+        "salary" : 2200,
+        "recovery" : 491,
+        "deposit" : 817
+      },
+      {
+        "date" : "2024-05-08",
+        "salary" : 2200,
+        "recovery" : 0,
+        "deposit" : 235
+      },
+      {
+        "date" : "2024-05-07",
+        "salary" : 2800,
+        "recovery" : 469,
+        "deposit" : 802
+      },
+      {
+        "date" : "2024-05-06",
+        "salary" : 2400,
+        "recovery" : 633,
+        "deposit" : 631
+      }
+    ],
+    "bonus" : [
+      {
+        "week" : 18,
+        "bonus" : 5000
+      },
+      {
+        "week" : 17,
+        "bonus" : 5000
+      },
+      {
+        "week" : 16,
+        "bonus" : 5000
+      }
+    ]
+  },
+  {
+    "employe" : {
+      "id" : 12,
+      "firstName" : "Ben",
+      "lastName" : "Duturfu",
+      "grade" : "Convoyeur Confirmé",
+      "picture" : "Gold"
+    },
+    "activities" : [
+      {
+        "date" : "2024-05-09",
+        "salary" : 2200,
+        "recovery" : 491,
+        "deposit" : 817
+      },
+      {
+        "date" : "2024-05-08",
+        "salary" : 2200,
+        "recovery" : 0,
+        "deposit" : 235
+      },
+      {
+        "date" : "2024-05-07",
+        "salary" : 2800,
+        "recovery" : 469,
+        "deposit" : 802
+      },
+      {
+        "date" : "2024-05-06",
+        "salary" : 2400,
+        "recovery" : 633,
+        "deposit" : 631
+      }
+    ],
+    "bonus" : [
+      {
+        "week" : 18,
+        "bonus" : 8000
+      },
+      {
+        "week" : 17,
+        "bonus" : 4000
+      },
+      {
+        "week" : 16,
+        "bonus" : 6000
+      }
+    ]
+  }
+]
