@@ -59,16 +59,16 @@ const Accueil: React.FC = () => {
           <div className='flex flex-col items-center justify-evenly p-4 border-2 rounded-lg my-2'>
             <h3 className='mb-3'>Activitées par Jour :</h3>
             <section className='grid grid-cols-1 p-1'>
-                <Activity dataFile={activities} subject="salary" title="Salaires" xAxis="date" xLabel="Date" yLabel="Salaire" />
-                <Activity dataFile={activities} subject="recovery" title="Récoltes" xAxis="date" xLabel="Date" yLabel="Récoltes" />
-                <Activity dataFile={activities} subject="deposit" title="Dépôts" xAxis="date" xLabel="Date" yLabel="Dépôts" />
+                <Activity dataFile={activities} title="Salaires" xAxis="date" xLabel="Date" yLabel="Salaire" />
+                <Activity dataFile={activities} title="Récoltes" xAxis="date" xLabel="Date" yLabel="Récoltes" />
+                <Activity dataFile={activities} title="Dépôts" xAxis="date" xLabel="Date" yLabel="Dépôts" />
             </section>
           </div>
         )}
         {(bonus && section === "week") && (
           <div className='flex flex-col items-center justify-evenly p-4 border-2 rounded-lg my-2'>
             <h3 className='mb-3'>Informations par Semaine :</h3>
-            <Bonus dataFile={bonus} subject="bonus" title="Primes" xAxis="week" xLabel="Semaine" yLabel="Prime" />
+            {/* <Bonus dataFile={bonus} title="Primes" xAxis="week" xLabel="Semaine" yLabel="Prime" /> */}
           </div>
         )}
         {(section === "contrats") && (

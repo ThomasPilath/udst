@@ -2,9 +2,11 @@ import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import PropsMyAreaInterface from '@/Interface/PropsMyAreaInterface';
 import PropsCustomTooltipInterface from '@/Interface/PropsCustomTooltipInterface';
+import { useChartsParams } from '@/store/useChartsParams';
 
 const Activity: React.FC<PropsMyAreaInterface> = (props) => {
-  const {dataFile, subject, title, xAxis, xLabel, yLabel} = props
+  const {dataFile, title, xAxis, xLabel, yLabel} = props
+  const { subject, setSubject } = useChartsParams()
   
   function CustomTooltip({ payload, label, active }: PropsCustomTooltipInterface) {
     if (!active || !payload || payload.length === 0) {
@@ -29,6 +31,17 @@ const Activity: React.FC<PropsMyAreaInterface> = (props) => {
       </div>
     )
   }
+
+  React.useEffect(() => {
+    if (title === "Salaires") {
+      setSubject("salary")
+    } else if (title === "Récoltes") {
+      setSubject("recovery")
+    } else if (title === "Dépôts") {
+      setSubject("deposit")
+    }
+    console.log("SUJET :", subject)
+  }, [title])
 
   return (
     <div className='flex flex-col'>
