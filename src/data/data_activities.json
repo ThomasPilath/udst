@@ -1,0 +1,58 @@
+[
+  {
+    "employeId": 12,
+    "date" : "2024-05-09",
+    "salary" : 2200,
+    "recovery" : 491,
+    "deposit" : 817
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-08",
+    "salary" : 2200,
+    "recovery" : 0,
+    "deposit" : 235
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-07",
+    "salary" : 2800,
+    "recovery" : 469,
+    "deposit" : 802
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-06",
+    "salary" : 2400,
+    "recovery" : 633,
+    "deposit" : 631
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-09",
+    "salary" : 2200,
+    "recovery" : 491,
+    "deposit" : 817
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-08",
+    "salary" : 2200,
+    "recovery" : 0,
+    "deposit" : 235
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-07",
+    "salary" : 2800,
+    "recovery" : 469,
+    "deposit" : 802
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-06",
+    "salary" : 2400,
+    "recovery" : 633,
+    "deposit" : 631
+  }
+]

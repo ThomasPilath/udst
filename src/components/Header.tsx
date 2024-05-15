@@ -1,11 +1,13 @@
 import React from 'react';
-import PropsHeaderInterface from '@/Interface/PropsHeaderInterface';
 import { ThemeToggle } from './ThemeToggle';
 import DisplayToggle from './DisplayToggle';
+import { useEmploye, useSociety } from '@/store/useData';
 
 
-const Header: React.FC<PropsHeaderInterface> = (props) => {
-  const { employe, society } = props
+const Header: React.FC = () => {
+
+  const employe = useEmploye((state) => state.employe)
+  const society = useSociety((state) => state.society)
 
   return (
     <header className='flex justify-between items-center gap-1 w-full h-28 my-4'>

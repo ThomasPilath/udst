@@ -1,0 +1,32 @@
+[
+  {
+    "employeId": 12,
+    "week" : 18,
+    "amount" : 5000
+  },
+  {
+    "employeId": 12,
+    "week" : 17,
+    "amount" : 5000
+  },
+  {
+    "employeId": 12,
+    "week" : 16,
+    "amount" : 5000
+  },
+  {
+    "employeId": 20,
+    "week" : 18,
+    "amount" : 8000
+  },
+  {
+    "employeId": 20,
+    "week" : 17,
+    "amount" : 4000
+  },
+  {
+    "employeId": 20,
+    "week" : 16,
+    "amount" : 6000
+  }
+]
