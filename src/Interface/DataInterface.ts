@@ -12,14 +12,16 @@ export interface EmployeInterface {
 }
 
 export interface ActivitiesInterface {
+    employeId: number;
     date: string;
     salary: number;
     recovery: number;
     deposit: number;
+    [key: string]: any;
 }
 
 export interface BonusInterface {
-    employe: string;
+    employeId: number;
     week: number;
-    amount: number;
+    bonus: number;
 }

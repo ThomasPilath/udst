@@ -5,23 +5,24 @@ import { PropsMyChartsInterface, PropsCustomTooltipInterface } from '@/Interface
 
 const MyCharts: React.FC<PropsMyChartsInterface> = (props) => {
   const {chartParams} = props
-  const activities = useActivities((store) => store.activities)
   const {subject, title, xAxis, xLabel, yLabel} = chartParams
+  const data = useActivities((store) => store.activities)
+
 
   function CustomTooltip({ payload, label, active }: PropsCustomTooltipInterface) {
     if (!active || !payload || payload.length === 0) {
       return null;
     }
     return (
-      <div className="rounded-lg border border-amber-600 bg-stone-800 bg-opacity-50 text-amber-500 p-4">
+      <div className="rounded-lg border border-stone-600 bg-stone-800/50 text-stone-300 p-4">
         <div className='grid grid-cols-2 gap-2'>
           <div className='flex flex-col'>
-            <span className='text-sm text-amber-500'>
+            <span className='text-sm text-stone-300'>
               {xLabel} : {label && (
                 <span>{label.split("-").reverse().slice(0, 2).join("/")}</span>
               )}
             </span>
-            <span className='text-sm text-amber-500'>
+            <span className='text-sm text-stone-300'>
               {yLabel} : {payload && (
                 payload[0].payload[subject]
               )}
@@ -33,42 +34,45 @@ const MyCharts: React.FC<PropsMyChartsInterface> = (props) => {
   }
 
   return (
-    <div className='h-fit border border-red-600'>
+    <div>
       <h3 className='mb-4'>{title}</h3>
-      <ResponsiveContainer className='max-h-64 border border-blue-600 w-full'>
-        <AreaChart data={activities} margin={{top: 10,right: 30,left: 0,bottom: 0}}>
+      <ResponsiveContainer className='max-h-52'>
+        <AreaChart data={data} width={100} height={100} margin={{top: 10,right: 30,left: 0,bottom: 0}}>
           <CartesianGrid strokeDasharray="2 2" stroke='#fef3c725' />
-          <Tooltip
-            cursor={{
-              radius: 4,
-              stroke: "#fdba7475",
-            }}
-            content={<CustomTooltip />}
-          />
-          <Area
-            type="monotone"
-            dataKey={subject}
-            stroke="#d97706"
-            fill="#fef08a25"
-          />
           <XAxis
             dataKey={xAxis}
-            stroke="#d97706"
+            stroke="#d6d3d1"
             tickLine={false}
-            fontSize={10}
+            fontSize={14}
             tickFormatter={(value: any) => {
               return value.split("-").reverse().slice(0, 2).join("/")
             }}
           />
           <YAxis
             dataKey={subject}
-            stroke="#d97706"
+            stroke="#d6d3d1"
             tickLine={false}
-            fontSize={10}
-            interval={1}
+            fontSize={14}
+            interval={2}
             tickFormatter={(value: any) => {
-              return `$${Intl.NumberFormat("en-US").format(value)}`
+              if(subject === "salary") {
+                return `$${Intl.NumberFormat("en-US").format(value)}`
+              }
+              return `${Intl.NumberFormat("en-US").format(value)} sacs`
             }}
+          />
+          <Tooltip
+            cursor={{
+              radius: 4,
+              stroke: "#44403c",
+            }}
+            content={<CustomTooltip />}
+          />
+          <Area
+            type="monotone"
+            dataKey={subject}
+            stroke="#d6d3d1"
+            fill="#44403c50"
           />
         </AreaChart>
       </ResponsiveContainer>

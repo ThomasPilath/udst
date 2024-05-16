@@ -1,7 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Union Depository Security Transfert",
+    "name": "UDST",
     "logo": "udst.png"
+  },
+  {
+    "id": 2,
+    "name": "Benny's",
+    "logo": "bennys.png"
+  },
+  {
+    "id": 3,
+    "name": "GBSF",
+    "logo": "gbsf.png"
+  },
+  {
+    "id": 4,
+    "name": "Pibwasser",
+    "logo": "pibwasser.png"
+  },
+  {
+    "id": 5,
+    "name": "Sunny Grains",
+    "logo": "sunny_grains.png"
+  },
+  {
+    "id": 6,
+    "name": "Weazel News",
+    "logo": "weazel_news.png"
+  },
+  {
+    "id": 7,
+    "name": "Xero",
+    "logo": "xero.png"
+  },
+  {
+    "id": 8,
+    "name": "Raven",
+    "logo": "raven.png"
   }
 ]
