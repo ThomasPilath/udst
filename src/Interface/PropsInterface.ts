@@ -7,7 +7,7 @@ export interface PropsChartParamsInterface {
 }
 
 export interface PropsMyChartsInterface {
-  chartParams: PropsChartParamsInterface;
+  chartParams: string;
 }
 
 export interface PropsCustomTooltipInterface {

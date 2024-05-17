@@ -98,3 +98,13 @@ export const getChartsParams = create<ChartsParamsType>((set) => ({
   },
   setChartParams: (newParams: PropsChartParamsInterface) => set({chartParams: newParams})
 }))
+
+type TotalType = {
+  total: number,
+  setTotal: (newTotal: number) => void
+}
+
+export const getTotal = create<TotalType>((set) => ({
+  total: 0,
+  setTotal: (newTotal: number) => set({total: newTotal})
+}))

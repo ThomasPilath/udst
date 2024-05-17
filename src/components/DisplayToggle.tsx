@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import PropsDisplayToggle from "@/Interface/PropsDisplayToggle"
+import {PropsDisplayToggle} from "@/Interface/PropsInterface"
 
 const DisplayToggle: React.FC<PropsDisplayToggle> = (props: any) => {
   const { admin } = props
@@ -19,10 +19,10 @@ const DisplayToggle: React.FC<PropsDisplayToggle> = (props: any) => {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
           {display === "User" && (
-            <User className={`h-[1.2rem] w-[1.2rem] transition-all ${display === "User" ? 'scale-100' : 'scale-0'} text-black dark:text-white`} />
+            <User className={`h-[1.2rem] w-[1.2rem] transition-all ${display === "User" ? 'scale-100' : 'scale-0'} `} />
           )}
           {display === "Building" && (
-            <Building className={`h-[1.2rem] w-[1.2rem] transition-all ${display === "Building" ? 'scale-100' : 'scale-0'} text-black dark:text-white`} />
+            <Building className={`h-[1.2rem] w-[1.2rem] transition-all ${display === "Building" ? 'scale-100' : 'scale-0'} `} />
           )}
         </Button>
       </DropdownMenuTrigger>
