@@ -38,7 +38,7 @@ const MyCharts: React.FC<PropsMyChartsInterface> = (props) => {
     }
 
     return (
-      <div className="rounded-lg border text-sm text-stone-900 border-stone-600 bg-stone-400/50 dark:text-stone-100 dark:border-stone-300 dark:bg-stone-800/50 p-4">
+      <div className="rounded-lg border text-sm text-stone-900 border-stone-600 bg-stone-400/75 dark:text-stone-100 dark:border-stone-300 dark:bg-stone-800/75 p-4">
         <div className='grid grid-cols-2 gap-2'>
           <div className='flex flex-col'>
             <span>

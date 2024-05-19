@@ -30,7 +30,7 @@ const Accueil: React.FC = () => {
       <section className='w-full'>
           <div className='flex flex-col items-center justify-evenly p-4 border-2 rounded-lg'>
             <h3 className='mb-3'>Résumé journalier :</h3>
-            <section className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 sm:gap-8 w-full'>
+            <section className='grid grid-cols-1 gap-4 lg:grid-cols-2 sm:gap-8 w-full'>
               <div className='h-80 border-2 border-stone-700 dark:border-stone-300 rounded-lg'>
                 <div className='absolute py-4 px-8'>
                   <h2 className='leading-none'>${total}</h2>

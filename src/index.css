@@ -5,9 +5,6 @@
 @layer base {
   :root {
 
-    min-width: 800px;
-
-
     --background: 20, 6%, 90%; /*stone-200*/
     --foreground: 20 14.3% 4.1%;
 
