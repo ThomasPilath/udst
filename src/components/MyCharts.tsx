@@ -46,11 +46,6 @@ const MyCharts: React.FC<PropsMyChartsInterface> = (props) => {
                 <span>{label.split("-").reverse().slice(0, 2).join("/")}</span>
               )}
             </span>
-            <span>
-              {yLabel} : {payload && (
-                payload[0].payload[subject]
-              )}
-            </span>
             {chartParams === "transfert" && (
               <span>
                 Dépôt : {payload && (
@@ -58,6 +53,11 @@ const MyCharts: React.FC<PropsMyChartsInterface> = (props) => {
                 )}
               </span>
             )}
+            <span>
+              {yLabel} : {payload && (
+                payload[0].payload[subject]
+              )}
+            </span>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ const MyCharts: React.FC<PropsMyChartsInterface> = (props) => {
   }
 
   return (
-    <section className='w-full h-full'>
+    <section className='w-full h-full pt-20'>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data} width={400} height={200} margin={{top: 60,right: 0,left: -61,bottom: -30}} >
           <XAxis

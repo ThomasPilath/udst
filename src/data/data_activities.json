@@ -1,6 +1,55 @@
 [
   {
     "employeId": 12,
+    "date" : "2024-05-16",
+    "salary" : 2200,
+    "recovery" : 491,
+    "deposit" : 817
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-15",
+    "salary" : 2600,
+    "recovery" : 584,
+    "deposit" : 943
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-14",
+    "salary" : 0,
+    "recovery" : 0,
+    "deposit" : 0
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-13",
+    "salary" : 2200,
+    "recovery" : 446,
+    "deposit" : 822
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-12",
+    "salary" : 4400,
+    "recovery" : 762,
+    "deposit" : 1019
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-11",
+    "salary" : 1600,
+    "recovery" : 620,
+    "deposit" : 368
+  },
+  {
+    "employeId": 12,
+    "date" : "2024-05-10",
+    "salary" : 800,
+    "recovery" : 114,
+    "deposit" : 200
+  },
+  {
+    "employeId": 12,
     "date" : "2024-05-09",
     "salary" : 2200,
     "recovery" : 491,
@@ -26,6 +75,55 @@
     "salary" : 2400,
     "recovery" : 633,
     "deposit" : 631
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-16",
+    "salary" : 2200,
+    "recovery" : 491,
+    "deposit" : 817
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-15",
+    "salary" : 2600,
+    "recovery" : 584,
+    "deposit" : 943
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-14",
+    "salary" : 0,
+    "recovery" : 0,
+    "deposit" : 0
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-13",
+    "salary" : 2200,
+    "recovery" : 446,
+    "deposit" : 822
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-12",
+    "salary" : 4400,
+    "recovery" : 762,
+    "deposit" : 1019
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-11",
+    "salary" : 1600,
+    "recovery" : 620,
+    "deposit" : 368
+  },
+  {
+    "employeId": 20,
+    "date" : "2024-05-10",
+    "salary" : 800,
+    "recovery" : 114,
+    "deposit" : 200
   },
   {
     "employeId": 20,

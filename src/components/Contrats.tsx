@@ -30,17 +30,15 @@ const Contrats: React.FC = () => {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    console.log(values);
+    setModal(false)
+    return form.reset()
   }
 
   const openModal = (e: any, societyId: number) => {
     e.preventDefault()
     setSociety(societies[societies.findIndex(society => society.id === societyId)])
     setModal(true)
-  }
-  const closeModal = (e: any) => {
-    e.preventDefault()
-    setModal(false)
   }
 
   return (
@@ -60,6 +58,11 @@ const Contrats: React.FC = () => {
         // modal formulaire d'enregistrement de factures
         <section className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
           <div className="relative flex flex-col items-center gap-3 w-1/2 p-4 rounded-xl border-4 border-stone-300 dark:border-stone-700 bg-stone-500 dark:bg-stone-400">
+            <button className="absolute top-0 right-0 p-2 text-stone-300 dark:text-stone-700" onClick={() => setModal(false)}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
             <h2 className="text-stone-300 dark:text-stone-700">{society.name}</h2>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -114,7 +117,7 @@ const Contrats: React.FC = () => {
                 </div>
                 <div className="flex justify-center gap-8 w-full">
                   <Button type="submit" className="bg-stone-300 text-stone-700">Envoyer</Button>
-                  <Button type="button" className="bg-stone-700 text-stone-300" onClick={e => closeModal(e)}>Annuler</Button>
+                  <Button type="button" className="bg-stone-700 text-stone-300" onClick={() => {form.reset(), setModal(false)}}>Annuler</Button>
                 </div>
               </form>
             </Form>
