@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { User, Building } from "lucide-react"
+import React from "react"
+import { User } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, Dot } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { getTotal, useActivities } from '@/store/useData';
 import { PropsMyChartsInterface, PropsCustomTooltipInterface } from '@/Interface/PropsInterface';
 import { useTheme } from './ThemeProvider';
